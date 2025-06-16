@@ -9,11 +9,11 @@ Primeira coisa a definir é a estrutura de pacotes, que devem estar dentro da pa
 
 Pastas padrao MVC:
 
-Controle: Classes de controle receberao todas as requisições de clientes
+Controle: Classes de controle receberao todas as requisições de clientes --> Requisições de banco de dados e api não são passadas nessa pasta --> Recebe as coisas e repassa para outros arquivos/pastas
 
-Servico: São as regras de negocio da aplicação
+Servico: São as regras de negocio da aplicação -> Engloba as pastas Modelo e Repositorio --> Sempre deve conter um @Service para o Spring identificar o arquivo como serviço
 
-Modelo:
+Modelo: Recebe a requisição das entidades Pessoa
 
 Repository: Classes que possuem codigos com requisição com banco de dados
 
@@ -22,6 +22,8 @@ Configuração:
 Security:
 
 Exception:
+
+Repositorio: É uma classe que vai gerenciar o banco de dados da aplicação
 
 Vamos utilizar o insomnia/postman para testar as requisições API
 
