@@ -22,7 +22,7 @@ A seguir está uma descrição detalhada da estrutura de pastas do projeto, com 
 
 #### Controlador (Controller):
 
-- Contém as classes responsáveis por gerenciar as requisições HTTP do cliente.
+- Contém as classes responsáveis por gerenciar as requisições HTTP do cliente. Se o cliente está clicando em algum lugar e não funciona, devemos olhar o controller em 1ºlugar para ver se a requisição está chegando para o sistema.
 
 - Não deve lidar diretamente com requisições ao banco de dados ou API externas. Essas responsabilidades devem ser delegadas a outras camadas.
 
@@ -30,7 +30,7 @@ A seguir está uma descrição detalhada da estrutura de pastas do projeto, com 
 
 - Implementa a lógica de negócios da aplicação.
 
-- Deve envolver as pastas Modelo e Repositório.
+- Deve envolver as pastas Modelo, Repositório e DTO.
 
 - Cada classe de serviço deve ser anotada com @Service para que o Spring a reconheça como um serviço.
 
