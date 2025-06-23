@@ -5,6 +5,8 @@ Este projeto é uma aplicação full-stack utilizando React no front-end e Sprin
 A seguir está uma descrição detalhada da estrutura de pastas do projeto, com base no padrão MVC (Model-View-Controller):
 
 ## Backend (Spring Boot)
+executar o projeto, abrir o prompt e executar mvnw spring-boot:run
+
 ### 1. application.properties
 - Arquivo que armazena as configurações do projeto, como a porta de execução e outras variáveis de ambiente.
 
@@ -72,6 +74,9 @@ A seguir está uma descrição detalhada da estrutura de pastas do projeto, com 
 - O Repositório se comunica com o banco de dados para persistir ou recuperar dados.
 
 - O resultado é retornado para o Controlador, que envia a resposta ao cliente.
+
+## Tratamento de exceções
+
 
 - Com essa organização, a aplicação fica mais estruturada, o que facilita o desenvolvimento e a manutenção.
 
