@@ -1,0 +1,8 @@
+url importante: http://localhost:8080/pessoa?page=1&size=3&sort=id.asc 
+
+http://localhost:8080/pessoa
+
+mvn install
+
+thymeleaf: cria emails personalizados
+

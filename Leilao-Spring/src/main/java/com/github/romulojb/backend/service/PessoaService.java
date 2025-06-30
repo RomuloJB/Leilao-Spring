@@ -28,12 +28,14 @@ public class PessoaService {
                         new Object[] { id }, LocaleContextHolder.getLocale())));
     }
 
-    public List<Pessoa> buscarTodos() {
-        return pessoaRepository.findAll();
+    public Page<Pessoa> buscarTodos(Pageable pageable) {
+        return pessoaRepository.findAll(pageable);
     }
 
     public Pessoa inserir(Pessoa pessoa) {
-        return pessoaRepository.save(pessoa);
+        return pessoaCadastrada = pessoaRepository.save(pessoa);
+        emailSevice.enviarEmailSimples(pessoaCadastrada.getEmail(), :"Cadastrado com sucesso",
+        "Cadastro no sistema de leilao foi feito com sucesso");
     }
 
     public Pessoa alterar(Pessoa pessoa) {
