@@ -77,6 +77,16 @@ executar o projeto, abrir o prompt e executar mvnw spring-boot:run
 
 ## Tratamento de exceções
 
+#### Utilitários importantes para o projeto
+url importante: http://localhost:8080/pessoa?page=1&size=3&sort=id.asc 
+
+http://localhost:8080/pessoa
+
+mvn install
+
+thymeleaf: cria emails personalizados
+
+
 
 - Com essa organização, a aplicação fica mais estruturada, o que facilita o desenvolvimento e a manutenção.
 
